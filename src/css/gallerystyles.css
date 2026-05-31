@@ -13,9 +13,9 @@ main{
     gap: 24px;
 }
 
-.gallery-img{
+.gallery-image{
     transition: transform 250ms ease-in-out;
 }
-.gallery-item:hover .gallery-img{
+.gallery-item:hover .gallery-image{
     transform: scale(1.05)
 }
