@@ -13,8 +13,10 @@ formEl.addEventListener("input", (event)=>{
 })
 
 document.addEventListener("DOMContentLoaded", ()=>{
-    formEl.email.value = JSON.parse(localStorage.getItem("feedback-form-state")).email
+    if (localStorage.getItem("feedback-form-state") != null){
+    formEl.email.value = JSON.parse(localStorage.getItem("feedback-form-state")).email;
     formEl.message.value = JSON.parse(localStorage.getItem("feedback-form-state")).message
+    }
 })
 
 formEl.addEventListener("submit", (event)=>{
