@@ -73,7 +73,7 @@ const galleryList = document.querySelector(".gallery")
 function itemTemplate(item) {
   return `<li class="gallery-item">
             <a class="gallery-link" href="${item.original}">
-                <img class="gallery-img" src="${item.preview}" alt="${item.description}" data-source="${item.original}" width="360" height="200" loading="lazy">
+                <img class="gallery-image" src="${item.preview}" alt="${item.description}" data-source="${item.original}" width="360" height="200" loading="lazy">
             </a>
         </li>`;
 }
